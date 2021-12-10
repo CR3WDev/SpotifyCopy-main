@@ -1,0 +1,56 @@
+.playlistMusics {
+    background: #262626;
+    min-height: 60vh;
+    .content {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo {
+        padding-top: 30px;
+        text-align: center;
+        img {
+            width: 200px;
+        }
+    }
+    .playlistInfo {
+        border-right: 1px solid #ffff;
+        text-align: center;
+        color: #fff;
+        margin: 50px;
+        .cover img {
+            width: 300px;
+        }
+    }
+    .musics {
+        height: 300px;
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+        .music {
+            h1 {
+                font-size: 18px;
+                font-weight: 300;
+                color: #fff;
+            }
+            audio {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .playlistMusics {
+        .logo {
+            margin-bottom: 30px;
+        }
+        .playlistInfo {
+            border: none;
+            margin-bottom: 50px;
+        }
+        .content {
+            grid-template-columns: 1fr;
+        }
+    }
+}
